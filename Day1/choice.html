@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Content Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .content {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Page Example</h1>
+  <p>Select a page to view:</p>
+  
+  <!-- User Selection -->
+  <button onclick="loadContent('A')">Page A</button>
+  <button onclick="loadContent('B')">Page B</button>
+  
+  <!-- Content Placeholder -->
+  <div class="content">
+    <h2 id="title">Welcome!</h2>
+    <p id="text">Select a page to view content.</p>
+    <img id="image" src="" alt="" style="display: none; max-width: 100%; height: auto;">
+  </div>
+
+  <script>
+    // Content Data for Pages A and B
+    const contentData = {
+      A: {
+        title: "Page A Title",
+        text: "This is the content for Page A.",
+        image: "https://via.placeholder.com/300/FF0000/FFFFFF?text=Page+A" // Placeholder image for Page A
+      },
+      B: {
+        title: "Page B Title",
+        text: "This is the content for Page B.",
+        image: "https://via.placeholder.com/300/0000FF/FFFFFF?text=Page+B" // Placeholder image for Page B
+      }
+    };
+
+    // Function to Load Content Dynamically
+    function loadContent(page) {
+      const data = contentData[page];
+      if (data) {
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("text").textContent = data.text;
+        const img = document.getElementById("image");
+        img.src = data.image;
+        img.style.display = "block"; // Show image
+      }
+    }
+  </script>
+</body>
+</html>

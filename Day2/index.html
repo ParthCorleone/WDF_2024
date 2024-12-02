@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link href="style.css" rel="spreadsheet"><!--External CSS file-->
+   <!--Internal css--> 
+   <style>
+        body{
+            color:white;
+            background-color: black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #d1b8b8;
+        }
+        li{
+            float: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li>Head</li>
+            <li>Stuff</li>
+            <li>The other thing</li>
+            <li>etc</li>
+            <li>Button5</li>
+            </ul>
+        </nav>
+    </header>
+    <address>Review Squirrel<br>99 Elizabeth Street<br> Sydney<br> Australia </address>
+    <h2>H2 tag(Define size in CSS)</h2>
+    <article>
+        <p>Not the footer</p>
+        <aside>This thing is the aside tag</aside>
+        <footer>
+            <p><time datetime="2004-11-26 19:00">Nov 26</time>
+                <br>The footer</p>
+        </footer>
+    </article>
+    <dl>
+        <dt>Review Squirrel</dt>
+        <dd>Helps you find the best tools for running a small business website</dd>
+    </dl>
+    <hr>
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9o2g12qGtMUFMbYAoHpUfrWBu1uXdX90HPA&s" alt=" ">
+        <figcaption>Target</figcaption>
+    </figure>
+    <b>Bold tag</b>
+    <p dir="ltr">This arabic word
+        <bdi>ARABIC_PLACEHOLDER</bdi> is automatically
+        displayed right‐to‐left.</p>
+        <p><del>This text has been deleted</del>, here is the rest of the paragraph.</p><del><p>This paragraph has been deleted.</p ></del >
+        <p>In HTML 5, what was previously called <em>block‐level</em> content is now called<em>flow</em> content.</p>
+        <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+        <p>The <mark> element is used to <mark>highlight</mark> text</p>
+        <p>Planet earth is <s>flat</s> round</p>
+        <p>Regular text. <samp>This is sample text.</samp> Regular text.</p>
+        <button type="button">Click Me</button>
+        <label>Choose a browser from this list:
+            <input list="browsers" name="browsers" />
+            <input type="text" id="fname" name="fname">
+            </label>
+            <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+            </datalist>
+        <br>
+        <form action="test.php" method="post"> <!--Action me js,php, java,python kuch bhi dalo-->
+            <fieldset>
+            <legend>Title</legend>
+            <input type="radio" id="radio"> <label
+            for="radio">Click me</label>
+            </fieldset>
+        </form>
+        <select>
+            <optgroup label="Group 1">
+            <option>Option 1.1</option>
+            </optgroup>
+            <optgroup label="Group 2">
+            <option>Option 2.1</option>
+            <option>Option 2.2</option>
+            </optgroup>
+            <optgroup label="Group 3" disabled>
+            <option>Option 3.1</option>
+            <option>Option 3.2</option>
+            <option>Option 3.3</option>
+            </optgroup>
+            </select>
+            <br><br>
+            <form
+oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" name="b" value="0" />
++
+<input type="number" name="a" value="60"
+/> =
+<output name="result">60</output>
+<br>
+<!--<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+<iframe src="http:www.example.com/iframeexample"width="300" height="400">
+    <video src="" autoplay></video>
+    <audio src="" autoplay></audio>
+    <br>
+    <dialog open>
+        <p>Greetings, one and all!</p>
+        </dialog>
+        <br>-->
+        <p style="border-style: dashed; border-width: 5px; border-color: aliceblue;">Things Happen</p>
+</form>
+</body>
+</html>
